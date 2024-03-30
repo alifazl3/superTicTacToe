@@ -1,0 +1,66 @@
+body {
+  background-color: #141E46;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-items: center;
+  justify-content: center;
+}
+.wrapper .bigTic {
+  width: 250px;
+  height: 250px;
+  line-height: 74px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.wrapper .bigTic-1, .wrapper .bigTic-4, .wrapper .bigTic-7 {
+  border-right: 10px solid #BB2525;
+}
+.wrapper .bigTic-3, .wrapper .bigTic-6, .wrapper .bigTic-9 {
+  border-left: 10px solid #BB2525;
+}
+.wrapper .bigTic-4, .wrapper .bigTic-5, .wrapper .bigTic-6 {
+  border-bottom: 10px solid #BB2525;
+  border-top: 10px solid #BB2525;
+}
+.wrapper .ticTacToe-wrapper {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-items: center;
+  justify-content: center;
+}
+.wrapper .ticTacToe {
+  width: 70px;
+  height: 70px;
+}
+.wrapper .ticTacToe-1, .wrapper .ticTacToe-4, .wrapper .ticTacToe-7 {
+  border-right: 5px solid #FF6969;
+}
+.wrapper .ticTacToe-3, .wrapper .ticTacToe-6, .wrapper .ticTacToe-9 {
+  border-left: 5px solid #FF6969;
+}
+.wrapper .ticTacToe-4, .wrapper .ticTacToe-5, .wrapper .ticTacToe-6 {
+  border-bottom: 5px solid #FF6969;
+  border-top: 5px solid #FF6969;
+}
+
+.x {
+  color: #ff0000; /* Red color for X */
+  font-size: 4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.o {
+  color: #0033ff; /* Blue color for O */
+  font-size: 4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*# sourceMappingURL=styles.css.map */
