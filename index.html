@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <html>
 <head>
     <title>
@@ -22,5 +23,91 @@
 <script type="text/javascript" src="assets/scripts/scripts.js">
 
 </script>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Join or Create Room</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <style>
+    body {
+      background-color: #0a0a0a;
+      font-family: 'Patrick Hand', cursive;
+      color: #eee;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+    h1 {
+      margin-bottom: 20px;
+      font-size: 288%;
+    }
+    input, button {
+      padding: 10px 20px;
+      margin: 10px;
+      font-size: 1.1em;
+      border: none;
+      border-radius: 6px;
+      font-family: 'Patrick Hand', cursive;
+    }
+    button {
+    cursor: pointer;
+    background-color: #4cb8ff;
+    color: white;
+    border: 2px dashed #ffb703;
+    font-size: 148%;
+    }
+    button:hover {
+      background-color: #38a6e0;
+    }
+    input {
+      background-color: #1a1a1a;
+      color: white;
+      text-align: center;
+      border: 2px dashed #06d6a0;
+    }
+    input[type="text"] {
+    padding: 8px 8px 8px 8px;
+    width: 60%;
+    border: 2px dashed #06d6a0;
+    border-radius: 6px;
+    background-color: #222;
+    font-family: 'Patrick Hand', cursive;
+    color: #eee;
+    outline: none;
+    margin-top: 10px;
+    font-size: 248%;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Ultimate Tic Tac Toe 🎮</h1>
+
+  <input type="text" id="roomInput" placeholder="Enter room code">
+  <button onclick="joinRoom()">Join Room</button>
+  <button onclick="createRoom()">Create New Room</button>
+
+  <script>
+    function joinRoom() {
+      const room = document.getElementById("roomInput").value.trim();
+      if (room) {
+        window.location.href = `game.html?room=${room}`;
+      } else {
+        alert("Please enter a room code.");
+      }
+    }
+
+    function createRoom() {
+      const room = Math.random().toString(36).substring(2, 8);
+      window.location.href = `game.html?room=${room}`;
+    }
+  </script>
+
+>>>>>>> ca177b9 (adding online game mode)
 </body>
 </html>
