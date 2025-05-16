@@ -1,0 +1,80 @@
+$primary: #141E46;
+$secondary: #FF6969;
+$helper:#BB2525;
+$bigTttBorderW: 10px;
+$TttBorderW: 5px;
+body {
+  background-color: $primary;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-items: center;
+  justify-content: center;
+
+  .bigTic {
+    width: 250px;
+    height: 250px;
+    line-height: 74px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &-1, &-4, &-7 {
+      border-right: $bigTttBorderW solid $helper;
+    }
+
+    &-3, &-6, &-9 {
+      border-left: $bigTttBorderW solid $helper;
+    }
+
+    &-4, &-5, &-6 {
+      border-bottom: $bigTttBorderW solid $helper;
+      border-top: $bigTttBorderW solid $helper;
+    }
+
+  }
+
+  .ticTacToe-wrapper {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-items: center;
+    justify-content: center;
+  }
+
+  .ticTacToe {
+    width: 70px;
+    height: 70px;
+
+    &-1, &-4, &-7 {
+      border-right: $TttBorderW solid $secondary;
+    }
+
+    &-3, &-6, &-9 {
+      border-left: $TttBorderW solid $secondary;
+    }
+
+    &-4, &-5, &-6 {
+      border-bottom: $TttBorderW solid $secondary;
+      border-top: $TttBorderW solid $secondary;
+    }
+
+  }
+
+}
+.x {
+  color: #ff0000;
+  font-size: 4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.o {
+  color: #0033ff;
+  font-size: 4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
